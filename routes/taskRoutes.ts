@@ -103,6 +103,11 @@
  *                 type: string
  *                 description: A detailed description of the task
  *                 example: "Write API documentation for the task management system."
+ *               dueDate:
+ *                 type: date
+ *                 description: A detailed description of the task
+ *                 example: "2025-01-01T00:00:00.000Z"
+ *                 
  *     responses:
  *       201:
  *         description: Task successfully created
