@@ -4,7 +4,7 @@ This repository contains the source code for the Task Management API, a backend 
 
 through JWT (JSON Web Token).
 
-The project uses Clever Cloud to host the MySQL database.
+****** The project uses Clever Cloud to host the MySQL database.
 
 Table of Contents
 
