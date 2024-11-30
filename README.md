@@ -4,11 +4,12 @@ This repository contains the source code for the Task Management API, a backend 
 The project uses Clever Cloud to host the MySQL database.
 
 Table of Contents
-Installation
-Setup
-API Documentation
-Assumptions and Design Decisions
-Installation
+
+*Installation
+*Setup
+*API Documentation
+*Assumptions and Design Decisions
+*Installation
 
 
 Follow these steps to set up the project locally:
