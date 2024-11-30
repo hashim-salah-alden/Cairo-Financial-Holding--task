@@ -1,5 +1,8 @@
 Cairo Financial Holding - Task Management API
-This repository contains the source code for the Task Management API, a backend application that allows users to manage tasks. The API provides features like creating, updating, retrieving, and deleting tasks, as well as user authentication through JWT (JSON Web Token).
+
+This repository contains the source code for the Task Management API, a backend application that allows users to manage tasks. The API provides features like creating, updating, retrieving, and deleting tasks, as well as user authentication 
+
+through JWT (JSON Web Token).
 
 The project uses Clever Cloud to host the MySQL database.
 
@@ -18,13 +21,19 @@ Table of Contents
 
 Follow these steps to set up the project locally:
 
+
 1. Clone the Repository
    
 git clone https://github.com/hashim-salah-alden/Cairo-Financial-Holding--task.git
 
-cd Cairo-Financial-Holding--task-main
+
+
+2. cd Cairo-Financial-Holding--task-main
+
+   
 
 3. Install Dependencies
+   
    
 Install all necessary dependencies using npm or yarn:
 
@@ -46,6 +55,8 @@ DATABASE_URL: The MySQL database connection string.
 JWT_SECRET: A secret key used for signing JWT tokens.
 
 PORT: The port on which the API will run.
+
+
 
 4. Start the Server
    
@@ -69,6 +80,7 @@ Swagger documentation can be accessed at:
 http://localhost:5000/api-docs
 
 
+
 Assumptions and Design Decisions
 
 1. Authentication & Authorization
@@ -80,6 +92,8 @@ A valid JWT must be passed in the Authorization header to access protected route
 Tokens expire after a set time (default: 1 hour).
 
 
+
+
 2. Database
    
 The API uses Prisma as the ORM (Object-Relational Mapper) to interact with the MySQL database.
@@ -89,6 +103,8 @@ Tasks are linked to users via the userId field in the tasks table.
 Tasks include the following fields:
 
 id, title, description, dueDate, createdAt, updatedAt.
+
+
 
 
 3. Password Security
