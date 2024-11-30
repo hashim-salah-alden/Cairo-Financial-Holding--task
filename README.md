@@ -24,7 +24,7 @@ Follow these steps to set up the project locally:
 
 1. Clone the Repository
    
-      git clone https://github.com/hashim-salah-alden/Cairo-Financial-Holding--task.git
+   git clone https://github.com/hashim-salah-alden/Cairo-Financial-Holding--task.git
 
 
 
@@ -35,78 +35,78 @@ Follow these steps to set up the project locally:
 3. Install Dependencies
    
    
-      Install all necessary dependencies using npm or yarn:
+   Install all necessary dependencies using npm or yarn:
 
 npm install
 # or
 yarn install
 
 4. Set Up Environment Variables
-      Create a .env file in the root directory of the project with the following variables:
+    Create a .env file in the root directory of the project with the following variables:
 
-      DATABASE_URL="your-mysql-connection-string"
+   DATABASE_URL="your-mysql-connection-string"
       
-      JWT_SECRET="your-secret-key"
+   JWT_SECRET="your-secret-key"
       
-      PORT=5000
+   PORT=5000
       
-      DATABASE_URL: The MySQL database connection string.
+   DATABASE_URL: The MySQL database connection string.
       
-      JWT_SECRET: A secret key used for signing JWT tokens.
+   JWT_SECRET: A secret key used for signing JWT tokens.
       
-      PORT: The port on which the API will run.
+   PORT: The port on which the API will run.
 
 
 
 5. Start the Server
    
-      Start the development server using:
+   Start the development server using:
       
-      npm start
+   npm start
       
-      The server will run on http://localhost:5000.
+   The server will run on http://localhost:5000.
       
-      Setup
-      After setting up the application, you should be able to:
+   Setup
+   After setting up the application, you should be able to:
       
-      Access the API endpoints.
+    Access the API endpoints.
       
-      Use Postman or any API testing tool to interact with the API.
+   Use Postman or any API testing tool to interact with the API.
       
-      Open the Swagger UI for interactive API documentation.
+   Open the Swagger UI for interactive API documentation.
       
-      Swagger documentation can be accessed at:
+   Swagger documentation can be accessed at:
       
-      http://localhost:5000/api-docs
+   http://localhost:5000/api-docs
 
 
 
 Assumptions and Design Decisions
 
-      1. Authentication & Authorization
+   1. Authentication & Authorization
             
-      The API uses JWT (JSON Web Tokens) for user authentication.
+   The API uses JWT (JSON Web Tokens) for user authentication.
          
-      A valid JWT must be passed in the Authorization header to access protected routes (e.g., tasks).
+   A valid JWT must be passed in the Authorization header to access protected routes (e.g., tasks).
          
-      Tokens expire after a set time (default: 1 hour).
+   Tokens expire after a set time (default: 1 hour).
 
 
 
 
 2. Database
    
-      The API uses Prisma as the ORM (Object-Relational Mapper) to interact with the MySQL database.
+   The API uses Prisma as the ORM (Object-Relational Mapper) to interact with the MySQL database.
       
-      Tasks are linked to users via the userId field in the tasks table.
+   Tasks are linked to users via the userId field in the tasks table.
       
-      Tasks include the following fields:
+   Tasks include the following fields:
       
-      id, title, description, dueDate, createdAt, updatedAt.
+   id, title, description, dueDate, createdAt, updatedAt.
 
 
 
 
 3. Password Security
    
-      User passwords are securely hashed using bcrypt before being stored in the database.
+   User passwords are securely hashed using bcrypt before being stored in the database.
